@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "vVer",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "description": "Display the vivaldi version in the extension icon",
 

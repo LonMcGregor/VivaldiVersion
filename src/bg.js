@@ -19,4 +19,7 @@ function updateIcon(){
 
 chrome.runtime.onStartup.addListener(updateIcon);
 chrome.runtime.onInstalled.addListener(updateIcon);
-chrome.browserAction.onClicked.addListener(updateIcon);
+chrome.browserAction.onClicked.addListener(() => {
+    updateIcon();
+    chrome.tabs.create({url:"vivaldi://version"});
+});
